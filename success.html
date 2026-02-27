@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Confirmed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Css/success.css">
+
+</head>
+<body>
+
+<div class="navbar">
+    Grocery Store
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <div class="success">
+            <div class="success-icon">✔</div>
+            <h2>Order Confirmed</h2>
+            <p>Your order has been placed successfully 🎉</p>
+        </div>
+
+        <div class="eta">
+            🚚 Arriving in <strong>10 Minutes</strong>
+        </div>
+
+        <div class="section">
+            <h3>Order Details</h3>
+            <div id="orderDetails"></div>
+        </div>
+
+        <div class="section">
+            <h3>Items Ordered</h3>
+            <div class="items" id="itemList"></div>
+        </div>
+
+        <button class="btn" onclick="goHome()">Continue Shopping</button>
+       
+    </div>
+    <audio id="orderSound" src="assets/wingsoarstudio-anvil-bell-2-mp3-485690.mp3" preload="auto"></audio>
+</div>
+
+<script src="Js/success.js">
+</script>
+
+</body>
+</html>

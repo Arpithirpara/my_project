@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/payment.css">
+</head>
+<body>
+
+<div class="navbar">Grocery Store</div>
+
+<div class="container">
+<div class="wrapper">
+
+    <!-- LEFT -->
+    <div class="card left">
+        <h3>Select Payment Method</h3>
+
+        <div class="payment-option active" onclick="selectMethod('card', this)">
+            💳 Credit / Debit Card
+        </div>
+
+        <div class="payment-option" onclick="selectMethod('upi', this)">
+            📱 UPI
+        </div>
+
+        <div class="payment-option" onclick="selectMethod('cod', this)">
+            💵 Cash on Delivery
+        </div>
+
+        <!-- CARD FORM -->
+        <div id="card" class="method">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Expiry (MM/YY)">
+            <input type="text" placeholder="CVV">
+        </div>
+
+        <!-- UPI FORM -->
+        <div id="upi" class="method hidden">
+            <input type="text" placeholder="Enter UPI ID (example@upi)">
+        </div>
+
+        <!-- COD INFO -->
+        <div id="cod" class="method hidden">
+            <p>Pay in cash when your order arrives.</p>
+        </div>
+
+        <button onclick="processPayment()">Place Order</button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card right">
+        <h3>Order Summary</h3>
+        <div class="summary">
+            <p><span>Items Total</span> <span id="itemsTotal">₹0</span></p>
+            <p><span>Delivery Fee</span> <span id="deliveryFee">₹0</span></p>
+            <p class="total"><span>Total</span> <span id="finalTotal">₹0</span></p>
+        </div>
+    </div>
+
+      <Script src="Js/payment.js"></Script>
+</body>
+</html>

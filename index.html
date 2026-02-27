@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Website</title>
+      <link rel="stylesheet" href="Css/Grocery.css">
+      
+  </head>
+  <body>
+        <header>   
+        <div id="logo">Groce<a id="it">ry</a></div>
+                  
+              <div id="location">
+                  <b>Delivery in 10 minutes</b> <br> 
+                      Ahmedabad,gujrat,india ▼
+              </div>
+               <div id="deliveryTimer" style="
+    background:#e8f8ec;
+    padding:10px;
+    text-align:center;
+    color:#0c831f;
+    font-weight:bold;
+    display:none;">
+    🚚 Arriving in <span id="timeLeft"></span>
+</div>  
+        
+    <div id="search">
+              <a id="icon"><img src="assets/img/icon.png" alt="">
+              </a>
+              <input class="search_input" placeholder="  search item" vsplaceholder="search" onkeyup="filerlist()"> 
+    </div> 
+
+            <form actio="" method="post">
+              <div id="signup"><a href="signup.html">Sign up</a></div>
+
+              <div id="logout" style="display:none">
+                
+              <a class="logout" href="account.html"><img class="userid" src="assets/img/circle-user-regular-full.svg">My Account ▼</a>
+              
+            </div>
+            </form>
+
+          <div id="my_cart" >
+            <a href="mycart.html"><img class="cart1" src="assets/img/mycart.png" alt="">
+          </a>
+              <div id="cart" style="cursor: pointer;">
+                Mycart </a>
+              </div>        
+  </div>
+   <div id="maintenance">
+             <h1>App is currently disabled by admin</h1>
+            <p class="offmsg">Stor close is after 2 AM and start 5 AM</p>
+             </div>
+
+  </header> 
+ 
+            
+              <script src="Js/index.js" defer></script>  
+              <script src="js/main.js"></script> 
+              <script src="Js/login.js"></script>
+              <script src="Js/signup.js"></script>
+              <script src="Js/account.js"></script>
+
+  
+    <!--<div id="header"></div>-->
+    <div id="main"></div>
+    <div id="footer"></div>
+    
+    
+  </body>
+  </html>

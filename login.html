@@ -1,0 +1,31 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="Css/login.css">
+
+  </head> 
+    <body>
+      
+          <div id="login">
+          <form onsubmit="return login(event)">
+               <div>
+                     <img src="assets/login.img/logo.png">
+               </div>
+              
+               <div class="text">
+                <p>India's last minute app<br><span>Log in or Sign up</span><br></p>
+                 
+
+      
+         <input type="text" name="mobile" placeholder="Enter mobile number"  maxlength="10" pattern="\d{10}" title="plese enter mobile number"
+          oninput="this.value = this.value.replace(/[^0-9]/g,'');" required><br>
+        <button class="Continue" type="submit" >Continue</button>
+</div>
+            </div>
+          </form> 
+          </div>
+                    <script src="Js/login.js"></script>
+ 
+
+    </body>
+  
+</html>
