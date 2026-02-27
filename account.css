@@ -1,0 +1,31 @@
+body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      
+    }
+
+    #account{
+       background-color: #fff;
+       padding:5px 80px;
+       border-radius: 20px;
+
+    }
+          p{
+            display: inline-block;
+            cursor: pointer;
+            padding:2px,4px;
+            font-size: 20px;
+          }
+           p:hover{
+
+            background-color: rgb(240, 241, 241);
+            
+           }
+           .logout:hover{
+           color: red;
+           }

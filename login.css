@@ -1,0 +1,54 @@
+ body{
+              background-color: #f0f0f0;
+              align-items: center;
+              display: flex;
+          }
+          #login{
+              background-color: white;
+              padding:30px;
+              margin: 600px;
+              border-radius:12px;
+               
+                
+          }
+          form{
+               margin-top: 50px;
+          }
+              img{
+                  height: 100px;
+                  width: 100px;
+                   align-items: center;
+                   margin-left: 78px;
+              }
+              p{
+                font-weight: bold;
+                margin-left: 12px;
+                 font-size: 25px;
+              }
+              span{
+                   font-size: 15px;
+                   margin-left: 65px;
+                   font-weight: normal;
+              }
+              input{
+                       height: 45px;
+                        width: 250px;
+                        border-radius: 12px;
+                        margin: 5px;
+
+              }
+              .Continue{
+                        height: 45px;
+                        width: 250px;
+                        border-radius: 12px;
+                        margin: 5px;
+                        background-color: #28a745;
+                        cursor: pointer;
+                        color: white;
+                        border:none;
+              }
+             
+              button:hover{
+                     
+                     background-color: green;
+              }

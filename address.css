@@ -1,0 +1,70 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; 
+}
+
+form{
+  height: 300px;
+  width: 550px;
+  padding: 25px;
+  background-color:#f0f0f0;
+  border: 1px ridge;
+  border-radius: 10px;
+  margin-left: 500px;
+  margin-top: 100px;
+  background-color: white;
+}
+
+
+/* Paragraph */
+p {
+  margin-bottom: 10px;
+}
+
+/* Input Field */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.work{
+     background-color:#ccc ;
+     padding: 15px;
+     border-radius: 10px;
+}
+#submitbutton{
+  padding:5px 15px 5px 15px;
+  border-radius: 5px;
+  border: 1px ridge black ;
+
+}
+
+#submitbutton:hover{
+  color: white;
+  background-color: green;
+
+}
+#placebutton{
+  
+  text-decoration: none;
+  margin: 5px 0 0 220px; /* top, right, bottom, left */
+  border:1px solid black;
+  padding: 10px 10px 10px 10px;
+  display: inline-block; /* margin-top work karne ke liye */
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+
+}
+#placebutton:hover{
+  background-color: blue;
+}
