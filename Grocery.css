@@ -61,7 +61,7 @@ header {
 
 #icon {
   background-color: #f0f0f0;
-  padding: 5.5px 8px;
+  padding: 6.5px 8px;
   border-radius: 6px 0 0 6px;
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ header {
 .search_input {
   flex: 1;
   min-width: 0;
-  padding: 12px 12px;
+  padding: 10px 12px;
   border: none;
   background: #f0f0f0;
   border-radius: 0 8px 8px 0;
