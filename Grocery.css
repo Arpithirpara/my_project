@@ -140,8 +140,6 @@ header {
     display: none;
   }
 }
-
-/* ── Mobile ── */
 @media (max-width: 700px) {
   body {
     padding-top: 110px;
@@ -156,20 +154,44 @@ header {
   #location {
     display: none;
   }
+
+  /* Row 1: Sign up/My Profile --- Logo --- My Cart */
+  form {
+    order: 1;
+    flex-shrink: 0;
+  }
   #logo {
     order: 2;
     font-size: 22px;
     padding-left: 0;
-    flex: 0 1 auto;
+    flex: 1;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
   }
-  form {
-    order: 1;
-    display: flex;
-    align-items: center;
+  #my_cart {
+    order: 3;  /* ← Cart LAST in row 1 */
+    margin-right: 0;
+    padding: 6px 10px;
+    font-size: 13px;
     flex-shrink: 0;
+    gap: 4px;
   }
+
+  /* Row 2: Search bar full width */
+  #search {
+    order: 4;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Row 3: Delivery timer */
+  #deliveryTimer {
+    order: 5;
+    flex: 1 1 100%;
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
   #signup a {
     font-size: 14px !important;
     white-space: nowrap;
@@ -182,29 +204,7 @@ header {
     height: 22px;
     width: 22px;
   }
-  #my_cart {
-    order: 1;
-    display: flex;
-    align-items: center;
-    margin-right: 0;
-    padding: 6px 10px;
-    font-size: 13px;
-    flex-shrink: 0;
-    gap: 4px;
-  }
   .cart1 {
     width: 18px;
-  }
-  #search {
-    order: 4;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-  #deliveryTimer {
-    order: 5;
-    flex: 1 1 100%;
-    display: block;
-    font-size: 12px;
-    padding: 7px 12px;
   }
 }
