@@ -65,6 +65,8 @@ header {
   border-radius: 6px 0 0 6px;
   display: flex;
   align-items: center;
+  border-radius: 0;
+
 }
 
 .search_input {
@@ -76,6 +78,8 @@ header {
   border-radius: 0 8px 8px 0;
   font-size: 14px;
   outline: none;
+  border-radius: 0;
+
 }
 
 #signup a {
