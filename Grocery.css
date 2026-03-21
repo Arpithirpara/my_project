@@ -171,6 +171,13 @@ header {
     gap: 8px;
     align-items: center;
   }
+  form {
+  order: 2;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
   /* ─ Row 1: Logo (left) + Signup/Logout + Cart (right) ─ */
   #logo {
