@@ -2,10 +2,13 @@ if(!localStorage.getItem("cartTotal")){
     window.location.replace("Grocery.html");
 }
 history.replaceState(null, null, "payment.html");
+
+// ✅ SAHI - closing bracket hai
 window.addEventListener("pageshow", function(event) {
     if(event.persisted || !localStorage.getItem("cartTotal")){
         window.location.replace("Grocery.html");
     }
+});
 
 let itemTotal;
 let deliveryFee;
@@ -42,7 +45,6 @@ window.onload = function() {
         })
         .then(res => res.json())
         .then(data => {
-            // ✅ NAYA - paymentInfo save karo
             let orderData = {
                 orderId: orderId,
                 amount: grandTotal,
