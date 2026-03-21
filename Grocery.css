@@ -168,12 +168,9 @@ header {
     padding-left: 0;
     flex: 1;
     text-align: center;
+    margin-right:100px;
   }
-  #location{
-    display: none !important;
-    
-  }
-  
+ 
 
   /* ✅ My Account - left */
   form {
