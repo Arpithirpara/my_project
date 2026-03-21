@@ -144,120 +144,72 @@ header {
   text-align: center;
 }
 
-/* ════════════════════════════════
-   RESPONSIVE BREAKPOINTS
-   ════════════════════════════════ */
 
-/* Tablet: location hide */
-@media (max-width: 1100px) {
-  #location { display: none; }
-}
 
-/* Small tablet: desktop cart hide */
-@media (max-width: 1024px) {
-  #my_cart { display: none; }
-}
 
-/* ── MOBILE (≤ 700px) ── */
 @media (max-width: 700px) {
   body {
-    padding-top: 130px; /* header ki height ke barabar */
+    padding-top: 130px;
   }
 
   header {
     height: auto;
-    padding: 10px 14px 10px;
+    padding: 10px 14px;
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
   }
-  form {
-  order: 2;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
-  /* ─ Row 1: Logo (left) + Signup/Logout + Cart (right) ─ */
+  /* ✅ Logo center */
   #logo {
-    order: 1;
-    font-size: 28px;
+    order: 2;
+    font-size: 24px;
     padding-left: 0;
-    flex: 0 0 auto;
+    flex: 1;
+    text-align: center;
   }
 
-  #signup,
-  #logout {
-    order: 2;
-    margin-left: auto; /* right side push */
-    font-size: 15px;
+  /* ✅ My Account - left */
+  form {
+    order: 1;
+    display: flex;
+    align-items: center;
   }
+
   #signup a,
   .logout {
-    font-size: 15px;
+    font-size: 13px;
+    white-space: nowrap;
   }
 
+  .userid {
+    height: 26px;
+    width: 26px;
+  }
+
+  /* ✅ My Cart - right */
   #my_cart {
-    order: 2;
+    order: 3;
     display: flex;
     margin-right: 0;
-    padding: 7px 12px;
-    font-size: 14px;
+    padding: 6px 10px;
+    font-size: 13px;
   }
 
-  /* ─ Row 2: Search full width ─ */
+  /* Row 2: Search */
   #search {
-    order: 3;
+    order: 4;
     flex: 1 1 100%;
     max-width: 100%;
   }
-  .search_input {
-    font-size: 14px;
-    padding: 10px 10px;
-  }
 
-  /* ─ Row 3: Delivery Timer full width ─ */
+  /* Row 3: Timer */
   #deliveryTimer {
-    order: 4;
+    order: 5;
     flex: 1 1 100%;
-    display: block; /* show on mobile when active */
+    display: block;
     font-size: 12px;
     padding: 7px 12px;
   }
-
-  /* Maintenance banner */
-  #maintenance {
-    margin: 20px 16px 0;
-    width: auto;
-    padding: 20px 16px;
-    border-radius: 10px;
-  }
-  #maintenance h1 {
-    font-size: 20px;
-  }
-  .offmsg {
-    font-size: 15px;
-  }
 }
 
-/* ── Very small phones (≤ 420px) ── */
-@media (max-width: 420px) {
-  body { padding-top: 140px; }
-
-  #logo { font-size: 22px; }
-
-  #signup a,
-  .logout {
-    font-size: 13px;
-  }
-
-  #my_cart {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .search_input {
-    font-size: 13px;
-  }
-}
