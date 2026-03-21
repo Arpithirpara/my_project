@@ -166,7 +166,7 @@ header {
     padding-left: 0;
     flex: 1;
     text-align: center;
-    margin-right: 0;
+    margin-right: 5px;
   }
   form {
     order: 1;
