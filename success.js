@@ -1,28 +1,38 @@
-history.replaceState(null, null, "Grocery.html");
-let payment = JSON.parse(localStorage.getItem("paymentInfo"));
-let cartItems = JSON.parse(localStorage.getItem("lastCartItems"));
+// Page load hote hi payment check karo
+window.addEventListener("load", function() {
+    let payment = JSON.parse(localStorage.getItem("paymentInfo"));
+    let cartItems = JSON.parse(localStorage.getItem("lastCartItems"));
 
-if(payment){
+    // Agar payment nahi hai toh seedha home bhejo
+    if (!payment) {
+        window.location.replace("index.html");
+        return;
+    }
 
-    // 🔥 YAHI ADD KARO (order confirm hote hi timer start)
+    // Delivery timer set karo
     let deliveryTime = new Date().getTime() + (10 * 60 * 1000);
     localStorage.setItem("deliveryTime", deliveryTime);
 
+    // Order details dikhao
     document.getElementById("orderDetails").innerHTML = `
         <p><strong>Order ID:</strong> ${payment.orderId}</p>
         <p><strong>Amount Paid:</strong> ₹${payment.amount}</p>
         <p><strong>Date:</strong> ${payment.date}</p>
         <p><strong>Status:</strong> ${payment.status}</p>
     `;
-}
-document.addEventListener("DOMContentLoaded", function() {
+
+    // Items dikhao
+    if (cartItems) {
+        let html = "";
+        cartItems.forEach(item => {
+            html += `<p>${item.name} <span>₹${item.price}</span></p>`;
+        });
+        document.getElementById("itemList").innerHTML = html;
+    }
+
+    // Sound bajao
     const sound = document.getElementById("orderSound");
-    
-    // Try to play
     sound.play().catch(() => {
-        console.log("Autoplay blocked. Waiting for user interaction...");
-        
-        // Fallback: play on first click
         document.addEventListener("click", function playOnce() {
             sound.play();
             document.removeEventListener("click", playOnce);
@@ -30,15 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-if(cartItems){
-    let html = "";
-    cartItems.forEach(item => {
-        html += `<p>${item.name} <span>₹${item.price}</span></p>`;
-    });
-    document.getElementById("itemList").innerHTML = html;
-}
-
-function goHome(){
-    
+function goHome() {
+    // Payment clear karo taaki back pe na aaye
+    localStorage.removeItem("paymentInfo");
+    localStorage.removeItem("lastCartItems");
     window.location.href = "index.html";
 }
