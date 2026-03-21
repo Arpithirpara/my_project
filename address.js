@@ -1,19 +1,22 @@
-// TOP PE ADD KARO
 if(!localStorage.getItem("cartTotal")){
     window.location.replace("Grocery.html");
 }
-
 history.replaceState(null, null, "address.html");
+
+// ✅ YE ADD KARO
+window.addEventListener("pageshow", function(event) {
+    if(event.persisted || !localStorage.getItem("cartTotal")){
+        window.location.replace("Grocery.html");
+    }
+});
+
 function saveAddress(event) {
     event.preventDefault();
-
     const addressValue = document.getElementById("address").value;
-
     if (addressValue.trim() === "") {
         alert("Please enter address");
         return;
     }
-
     fetch("https://groceryproject-production.up.railway.app/api/address/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -29,22 +32,17 @@ function saveAddress(event) {
         alert("Error saving address");
     });
 }
-
 function placeOrder() {
     let cart = JSON.parse(localStorage.getItem("cart")) || {};
-
     if (Object.keys(cart).length === 0) {
         alert("Cart khali hai!");
         return;
     }
-
     let name = prompt("Aapka naam batao:");
     if (!name) return;
-
     let total = Object.values(cart).reduce((sum, item) => {
         return sum + (item.price * item.qty);
     }, 0);
-
     fetch("https://groceryproject-production.up.railway.app/placeorder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
