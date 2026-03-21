@@ -136,7 +136,7 @@ const penal1=[
 
   const penal3=[
           {
-            img:"assets/penal3/photo_1.png",
+            img:"photo_1.png",
             Name:"Bikaneri Bhujia  ",
             weight:"80 g ",
             price:"99",
