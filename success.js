@@ -40,5 +40,5 @@ if(cartItems){
 
 function goHome(){
     
-    window.location.href = "Grocery.html";
+    window.location.href = "index.html";
 }
