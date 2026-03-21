@@ -140,59 +140,98 @@ header {
 }
 
 /* ✅ Mobile fix */
-@media (max-width: 700px) {
-  #maintenance {
-    margin: 140px 16px 0;  /* header ke neeche */
-    width: auto;           /* side se space */
-    padding: 20px 16px;
-    border-radius: 10px;
-  }
-
-  #maintenance h1 {
-    font-size: 20px;       /* bada heading chhota karo */
-  }
-
-  .offmsg {
-    font-size: 15px;
-  }
-}
 /* ── Responsive ── */
-
 @media (max-width: 1100px) {
   #location { display: none; }
 }
-
 @media (max-width: 1024px) {
   #my_cart { display: none; }
 }
-
 @media (max-width: 700px) {
   header {
     height: auto;
-    padding: 10px 14px;
+    padding: 8px 12px;
     flex-wrap: wrap;
+    gap: 8px;
   }
-
-  #logo   { order: 1; font-size: 28px; }
+  #logo {
+    order: 1;
+    font-size: 26px;
+    padding-left: 0;
+  }
   #signup,
-  #logout { order: 2; margin-left: auto; }
-  #my_cart { order: 3; display: flex; }
-
+  #logout {
+    order: 2;
+    margin-left: auto;
+  }
+  #signup a, .logout {
+    font-size: 14px;
+  }
+  #my_cart {
+    order: 3;
+    display: flex;
+    font-size: 13px;
+    padding: 6px 10px;
+    margin-right: 0;
+  }
+  .cart1 {
+    width: 18px;
+  }
   #search {
     order: 4;
     flex: 1 1 100%;
     max-width: 100%;
   }
-
+  .search_input {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
   #deliveryTimer {
     order: 5;
     flex: 1 1 100%;
+    font-size: 12px;
+    padding: 6px 10px;
   }
-
-  body { padding-top: 120px; }
+  body {
+    padding-top: 110px;
+  }
 }
-
 @media (max-width: 420px) {
-  #logo { font-size: 22px; }
-  #signup a, .logout { font-size: 15px; }
+  #logo {
+    font-size: 20px;
+    padding-left: 0;
+  }
+  header {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  #signup a, .logout {
+    font-size: 13px;
+  }
+  .userid {
+    height: 28px;
+  }
+  #my_cart {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .search_input {
+    font-size: 12px;
+    padding: 7px 8px;
+  }
+  body {
+    padding-top: 115px;
+  }
+}
+@media (max-width: 360px) {
+  #logo {
+    font-size: 18px;
+  }
+  #signup a, .logout {
+    font-size: 12px;
+  }
+  #my_cart {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
 }
