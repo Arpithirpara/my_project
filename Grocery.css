@@ -175,9 +175,13 @@ header {
     flex-shrink: 0;
   }
   #signup a,
-  .logout {
-    font-size: 25px;
+   {
+    font-size: 25px !important;
     white-space: nowrap;
+  }
+  .logout{
+     font-size: 25px;
+  white-space: nowrap;
   }
   .userid {
     height: 26px;
