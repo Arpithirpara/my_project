@@ -6,7 +6,7 @@ history.replaceState(null, null, "payment.html");
 // ✅ SAHI - closing bracket hai
 window.addEventListener("pageshow", function(event) {
     if(event.persisted || !localStorage.getItem("cartTotal")){
-        window.location.replace("Grocery.html");
+        window.location.replace("index.html");
     }
 });
 
