@@ -23,7 +23,7 @@ function login(event) {
         localStorage.setItem("userMobile", user.phone);
         localStorage.setItem("userName", user.name);
         alert(`Welcome ${user.name} ✅`);
-        window.location.href = "grocery.html";
+        window.location.href = "index.html";
     })
     .catch(err => {
         alert(err.message);
