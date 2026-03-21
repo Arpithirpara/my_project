@@ -183,7 +183,7 @@ header {
     width: 22px;
   }
   #my_cart {
-    order: 3;
+    order: 1;
     display: flex;
     align-items: center;
     margin-right: 0;
