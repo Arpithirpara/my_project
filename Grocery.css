@@ -139,30 +139,24 @@ header {
   text-align: center;
 }
 
-/* ✅ Mobile fix */
-/* ── Responsive ── */
-@media (max-width: 1100px) {
-  #location { display: none; }
-}
-@media (max-width: 1024px) {
-  #my_cart { display: none; }
-}
-@media (max-width: 700px) {
+/@media (max-width: 700px) {
   header {
     height: auto;
-    padding: 8px 12px;
+    padding: 10px 14px;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
+    align-items: center;
   }
   #logo {
     order: 1;
-    font-size: 26px;
+    font-size: 24px;
     padding-left: 0;
+    flex: 1;  /* ✅ logo left mein rahega */
   }
   #signup,
   #logout {
     order: 2;
-    margin-left: auto;
+    margin-left: 0;
   }
   #signup a, .logout {
     font-size: 14px;
@@ -185,6 +179,7 @@ header {
   .search_input {
     font-size: 13px;
     padding: 8px 10px;
+    width: 100%;
   }
   #deliveryTimer {
     order: 5;
@@ -193,45 +188,6 @@ header {
     padding: 6px 10px;
   }
   body {
-    padding-top: 110px;
-  }
-}
-@media (max-width: 420px) {
-  #logo {
-    font-size: 20px;
-    padding-left: 0;
-  }
-  header {
-    padding: 6px 10px;
-    gap: 6px;
-  }
-  #signup a, .logout {
-    font-size: 13px;
-  }
-  .userid {
-    height: 28px;
-  }
-  #my_cart {
-    font-size: 12px;
-    padding: 5px 8px;
-  }
-  .search_input {
-    font-size: 12px;
-    padding: 7px 8px;
-  }
-  body {
-    padding-top: 115px;
-  }
-}
-@media (max-width: 360px) {
-  #logo {
-    font-size: 18px;
-  }
-  #signup a, .logout {
-    font-size: 12px;
-  }
-  #my_cart {
-    font-size: 11px;
-    padding: 4px 6px;
+    padding-top: 125px; /* ✅ header height ke hisaab se */
   }
 }
