@@ -33,6 +33,6 @@ function login(event) {
 // Already logged-in user redirect
 window.onload = function() {
     if (localStorage.getItem("isLoggedIn") === "true") {
-        window.location.href = "grocery.html";
+        window.location.href = "index.html";
     }
 };
