@@ -164,7 +164,7 @@ header {
     order: 2;
     font-size: 22px;
     padding-left: 0;
-    flex: 1;
+    flex: 0 1 auto;
     text-align: center;
     margin-right: 0px;
   }
@@ -174,7 +174,7 @@ header {
     align-items: center;
     flex-shrink: 0;
   }
-  #signup a,
+  #signup a
    {
     font-size: 25px !important;
     white-space: nowrap;
