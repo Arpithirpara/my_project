@@ -186,7 +186,7 @@ header {
   }
   .search_input {
     font-size: 13px;
-    padding: 10px 5px;
+    padding: 10px 0px;
     width: 100%;
   }
   #deliveryTimer {
