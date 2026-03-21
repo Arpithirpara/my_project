@@ -139,7 +139,8 @@ header {
   text-align: center;
 }
 
-/@media (max-width: 700px) {
+
+@media (max-width: 700px) {
   header {
     height: auto;
     padding: 10px 14px;
@@ -148,14 +149,15 @@ header {
     align-items: center;
   }
   #logo {
-    order: 1;
+    order: 2;
     font-size: 24px;
     padding-left: 0;
-    flex: 1;  /* ✅ logo left mein rahega */
+    flex: 1;
+    text-align: center;
   }
   #signup,
   #logout {
-    order: 2;
+    order: 1;
     margin-left: 0;
   }
   #signup a, .logout {
@@ -166,7 +168,7 @@ header {
     display: flex;
     font-size: 13px;
     padding: 6px 10px;
-    margin-right: 0;
+    margin-right: 20px; /* ✅ thoda left mein */
   }
   .cart1 {
     width: 18px;
@@ -188,6 +190,6 @@ header {
     padding: 6px 10px;
   }
   body {
-    padding-top: 125px; /* ✅ header height ke hisaab se */
+    padding-top: 125px;
   }
 }
