@@ -51,6 +51,8 @@ header {
   flex: 1 1 180px;
   max-width: 420px;
   min-width: 0;
+   overflow: hidden; /* ✅ ye add karo */
+  border-radius: 8px;
 }
 #icon {
   background-color: #f0f0f0;
