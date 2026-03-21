@@ -170,7 +170,7 @@ header {
     text-align: center;
   }
   #location{
-    display:none;
+    display: none !important;
     
   }
   
