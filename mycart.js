@@ -6,7 +6,7 @@ history.replaceState(null, null, "cart.html");
 // ✅ YE ADD KARO
 window.addEventListener("pageshow", function(event) {
     if(event.persisted || !localStorage.getItem("cart") || Object.keys(JSON.parse(localStorage.getItem("cart"))).length === 0){
-        window.location.replace("Grocery.html");
+        window.location.replace("index.html");
     }
 });
 
