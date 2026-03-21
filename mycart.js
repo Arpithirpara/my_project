@@ -1,5 +1,5 @@
 if(!localStorage.getItem("cart") || Object.keys(JSON.parse(localStorage.getItem("cart"))).length === 0){
-    window.location.replace("Grocery.html");
+    window.location.replace("index.html");
 }
 history.replaceState(null, null, "cart.html");
 
