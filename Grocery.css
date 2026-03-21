@@ -163,7 +163,7 @@ header {
   /* ✅ Logo center */
   #logo {
     order: 2;
-    font-size: 24px;
+    font-size: 19px;
     padding-left: 0;
     flex: 1;
     text-align: center;
