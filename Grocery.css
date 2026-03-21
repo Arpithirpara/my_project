@@ -146,13 +146,10 @@ header {
 }
 
 
-
-
 @media (max-width: 700px) {
   body {
     padding-top: 130px;
   }
-
   header {
     height: auto;
     padding: 10px 14px;
@@ -160,58 +157,46 @@ header {
     gap: 8px;
     align-items: center;
   }
-
-  /* ✅ Logo center */
+  #location {
+    display: none;
+  }
   #logo {
     order: 2;
     font-size: 25px;
     padding-left: 0;
     flex: 1;
     text-align: center;
-    margin-right:100px;
+    margin-right: 0;
   }
-
-  
-@media (max-width: 700px) {
-  #location { display: none; }
-}
- 
-
-  /* ✅ My Account - left */
   form {
     order: 1;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
   }
-
   #signup a,
   .logout {
     font-size: 13px;
     white-space: nowrap;
   }
-
   .userid {
     height: 26px;
     width: 26px;
   }
-
-  /* ✅ My Cart - right */
   #my_cart {
     order: 3;
     display: flex;
+    align-items: center;
     margin-right: 0;
     padding: 6px 10px;
     font-size: 13px;
+    flex-shrink: 0;
   }
-
-  /* Row 2: Search */
   #search {
     order: 4;
     flex: 1 1 100%;
     max-width: 100%;
   }
-
-  /* Row 3: Timer */
   #deliveryTimer {
     order: 5;
     flex: 1 1 100%;
@@ -220,4 +205,3 @@ header {
     padding: 7px 12px;
   }
 }
-
