@@ -1,7 +1,7 @@
 window.onload = function () {
   let isLoggedIn = localStorage.getItem("isLoggedIn");
   if (isLoggedIn !== "true") {
-    window.location.replace("grocery.html");
+    window.location.replace("index.html");
   }
 };
 function logout() {
