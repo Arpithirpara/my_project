@@ -14,8 +14,7 @@ if(payment){
         <p><strong>Date:</strong> ${payment.date}</p>
         <p><strong>Status:</strong> ${payment.status}</p>
     `;
-    localStorage.removeItem("paymentInfo");
-    localStorage.removeItem("lastCartItems");
+    
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,5 +36,7 @@ if(cartItems){
 }
 
 function goHome(){
+    localStorage.removeItem("paymentInfo");
+    localStorage.removeItem("lastCartItems");
     window.location.replace("index.html");
 }
