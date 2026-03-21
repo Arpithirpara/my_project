@@ -70,7 +70,7 @@ header {
 .search_input {
   flex: 1;
   min-width: 0;
-  padding: 10px 12px;
+  padding: 10px 5px;
   border: none;
   background: #f0f0f0;
   border-radius: 0 8px 8px 0;
