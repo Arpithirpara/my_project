@@ -2,6 +2,11 @@ if(!localStorage.getItem("cartTotal")){
     window.location.replace("Grocery.html");
 }
 history.replaceState(null, null, "payment.html");
+window.addEventListener("pageshow", function(event) {
+    if(event.persisted || !localStorage.getItem("cartTotal")){
+        window.location.replace("Grocery.html");
+    }
+
 let itemTotal;
 let deliveryFee;
 let grandTotal;
