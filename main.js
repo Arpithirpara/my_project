@@ -19,52 +19,52 @@ const penal1=[
     price:"75",
   },
 {
-    img:"assets/penal1/amul_4.png",
+    img:"amul_4.png",
     Name:"Gold milk",
     weight:"500 ml",
     price:"33",
   },
 {
-    img:"assets/penal1/amul_5.png",
+    img:"amul_5.png",
     Name:" Amul Masti curd",
     weight:"1 kg",
     price:"75",
   },
 {
-    img:"assets/penal1/amul_6.png",
+    img:"amul_6.png",
     Name:"Amul Masti",
     weight:"500 g",
     price:"40",
   },
 {
-    img:"assets/penal1/amul_7.png",
+    img:"amul_7.png",
     Name:"Amul Taaza milk",
     weight:"250 ml",
     price:"18",
   },
   {
-    img:"assets/penal1/amul_8.png",
+    img:"amul_8.png",
     Name:"Amul Butter",
     weight:"200 g",
     price:"100",
   },
    
   {
-    img:"assets/penal1/bread_2.png",
+    img:"bread_2.png",
     Name:"Wheat Bread ",
     weight:"400 g",
     price:"55",
   },
  
   {
-    img:"assets/penal1/bread.png",
+    img:"bread.png",
     Name:"Super White Bread ",
     weight:"300 g",
     price:"50",
   },
  
   {
-    img:"assets/penal1/cir cow_milk.png",
+    img:"cir cow_milk.png",
     Name:"Gir_cow milk ",
     weight:"1 Ltr ",
     price:"80",
@@ -73,36 +73,36 @@ const penal1=[
 
   const penal2=[
            {
-            img:"assets/penal2/photo_1.png",
+            img:"photo_1.png",
             Name:"Tomato ",
             weight:"500 g ",
             price:"25",
            },
            {
-            img:"assets/penal2/photo_2.png",
+            img:"photo_2.png",
             Name:"Lemon ",
             weight:"250 g ",
             price:"20",
            },
            {
-            img:"assets/penal2/photo_3.png",
+            img:"photo_3.png",
             Name:"Red Carrot ",
             weight:"500 g ",
             price:"20",
            },
            {
-            img:"assets/penal2/photo_4.png",
+            img:"photo_4.png",
             Name:"Strawberry",
             weight:"180 g ",
             price:"80",
            },{
-            img:"assets/penal2/photo_5.png",
+            img:"photo_5.png",
             Name:"Dragon Fruit ",
             weight:"300 g ",
             price:"120",
            },
            {
-            img:"assets/penal2/photo_6.png",
+            img:"photo_6.png",
             Name:"AmericanCorn(Bhutta) ",
             weight:"1 pc ",
             price:"23",
