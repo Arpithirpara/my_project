@@ -1,4 +1,10 @@
-history.replaceState(null, null, "Grocery.html");
+
+if(!JSON.parse(localStorage.getItem("paymentInfo"))){
+    window.location.replace("index.html");
+}
+
+// baaki purana code neeche rahega...
+let payment = JSON.parse(localStorage.getItem("paymentInfo"));
 let payment = JSON.parse(localStorage.getItem("paymentInfo"));
 let cartItems = JSON.parse(localStorage.getItem("lastCartItems"));
 if(payment){
@@ -10,6 +16,8 @@ if(payment){
         <p><strong>Date:</strong> ${payment.date}</p>
         <p><strong>Status:</strong> ${payment.status}</p>
     `;
+     localStorage.removeItem("paymentInfo");
+    localStorage.removeItem("lastCartItems");
 }
 document.addEventListener("DOMContentLoaded", function() {
     const sound = document.getElementById("orderSound");
@@ -31,5 +39,5 @@ if(cartItems){
     document.getElementById("itemList").innerHTML = html;
 }
 function goHome(){
-    window.location.href = "index.html";
+    window.location.replace("index.html");
 }
