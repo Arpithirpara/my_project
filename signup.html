@@ -31,5 +31,48 @@
             </div>
 
   </body>
-          <script src="signup.js"></script>
+          <script >
+            
+  window.onload = function () {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      window.location.href = "grocery.html";
+    }
+  };
+
+  function signup(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let password = document.getElementById("password").value;
+    let confirm = document.getElementById("confirm").value;
+
+    if (name.length < 3) { alert("Name must be at least 3 characters"); return; }
+    if (!email.includes("@") || !email.includes(".")) { alert("Please enter a valid email"); return; }
+    if (phone.length < 10) { alert("Please enter valid phone number"); return; }
+    if (password.length < 1) { alert("Password required"); return; }
+    if (password !== confirm) { alert("Passwords do not match"); return; }
+
+    fetch("https://groceryproject-production.up.railway.app/api/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, phone, password })
+    })
+    .then(res => res.text())
+    .then(msg => {
+      if (msg === "SIGNUP_SUCCESS") {
+        alert("Signup successful ✅ Please login");
+        window.location.href = "login.html";
+      } else if (msg === "EMAIL_ALREADY_EXISTS") {
+        alert("Email already exists ❌");
+      } else if (msg === "PHONE_ALREADY_EXISTS") {
+        alert("Phone already registered!");
+      } else {
+        alert("Something went wrong: " + msg);
+      }
+    })
+    .catch(err => console.error("Error:", err));
+  }
+</script>
+          </script>
 </html>
