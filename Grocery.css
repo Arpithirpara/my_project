@@ -166,7 +166,7 @@ header {
     padding-left: 0;
     flex: 1;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 0px;
   }
   form {
     order: 1;
@@ -176,7 +176,7 @@ header {
   }
   #signup a,
   .logout {
-    font-size: 20px;
+    font-size: 25px;
     white-space: nowrap;
   }
   .userid {
