@@ -1,19 +1,19 @@
 const penal1=[
   {
-    img:"assets/penal1/amul_1.png",
+    img:"amul_1.png",
     Name:"Amul Butter",
     weight:"100 g",
     price:"60",
   },
  
 {
-    img:"assets/penal1/amul_2.png",
+    img:"amul_2.png",
     Name:"amul chess",
     weight:"200 g",
     price:"127",
   },
 {
-    img:"assets/penal1/amul_3.png",
+    img:"amul_3.png",
     Name:"amul Dahi",
     weight:"1 kg",
     price:"75",
