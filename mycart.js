@@ -32,7 +32,7 @@ function saveCartToBackend(itemTotal, deliveryTotal) {
         item_total: itemTotal,
         delivery_total: deliveryTotal
     };
-    fetch("https://groceryproject-production.up.railway.app/api/cart/save", {
+    fetch("https://groceryproject-production-a0ea.up.railway.app/api/cart/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cartData)
