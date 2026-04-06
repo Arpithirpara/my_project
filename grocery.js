@@ -16,7 +16,7 @@ if (file === "main.html") {
 
 // page load hote hi status check karo
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("https://groceryproject-production.up.railway.app/api/admin/status")
+  fetch("https://groceryproject-production-a0ea.up.railway.app/api/admin/status")
     .then(res => res.json())
     .then(data => {
       if (!data.status) { // agar app OFF hai
