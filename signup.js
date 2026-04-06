@@ -37,7 +37,7 @@ function signup(event) {
 
   let data = { name, email,phone, password };
 
-  fetch("https://groceryproject-production.up.railway.app/api/signup", {   // ✅ correct port
+  fetch("https://groceryproject-production-a0ea.up.railway.app/api/signup", {   // ✅ correct port
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
