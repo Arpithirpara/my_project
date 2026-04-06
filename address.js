@@ -43,7 +43,7 @@ function placeOrder() {
     let total = Object.values(cart).reduce((sum, item) => {
         return sum + (item.price * item.qty);
     }, 0);
-    fetch("https://groceryproject-production-a0ea.up.railway.app/api/placeorder", {
+    fetch("https://groceryproject-production-a0ea.up.railway.app/placeorder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
