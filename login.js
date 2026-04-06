@@ -8,7 +8,7 @@ function login(event) {
         return;
     }
 
-    fetch("https://groceryproject-production.up.railway.app/api/login", {
+    fetch("https://groceryproject-production-a0ea.up.railway.app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: mobileInput })
