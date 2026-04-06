@@ -17,7 +17,7 @@ function saveAddress(event) {
         alert("Please enter address");
         return;
     }
-    fetch("https://groceryproject-production.up.railway.app/api/address/save", {
+    fetch("https://groceryproject-production-a0ea.up.railway.app/api/address/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fulladdress: addressValue })
@@ -43,7 +43,7 @@ function placeOrder() {
     let total = Object.values(cart).reduce((sum, item) => {
         return sum + (item.price * item.qty);
     }, 0);
-    fetch("https://groceryproject-production.up.railway.app/placeorder", {
+    fetch("https://groceryproject-production-a0ea.up.railway.app/api/placeorder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
