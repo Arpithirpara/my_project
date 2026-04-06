@@ -36,7 +36,7 @@ window.onload = function() {
             status: "SUCCESS",
             paymentDate: new Date().toLocaleString()
         };
-        fetch("https://groceryproject-production.up.railway.app/api/payment/save", {
+        fetch("https://groceryproject-production-a0ea.up.railway.app/api/payment/save", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
