@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let cartItems = JSON.parse(localStorage.getItem("lastCartItems"));
 
     if(payment){
-        let deliveryTime = new Date().getTime() + (10 * 60 * 1000);
+        let deliveryTime = new Date().getTime() + (25 * 60 * 1000);
         localStorage.setItem("deliveryTime", deliveryTime);
         document.getElementById("orderDetails").innerHTML = `
             <p><strong>Order ID:</strong> ${payment.orderId}</p>
