@@ -355,7 +355,7 @@ function renderProducts(panelId, products) {
     panel.innerHTML += `
       <div class="p_item">
         <img src="${item.img}">
-        <p>8 mins</p>
+        <p>25 mins</p>
         <h4>${item.Name}</h4>
         <p>${item.weight}</p>
         <p class="price">₹${item.price}</p>
